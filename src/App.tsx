@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import { Globe } from "lucide-react";
 import { BackgroundEffects } from "./components/BackgroundEffects";
 import { Badge } from "./components/Badge";
-import { WaitlistCard } from "./components/WaitlistCard";
 import { Countdown } from "./components/Countdown";
 import { translations, Lang } from "./translations";
 
@@ -61,11 +60,6 @@ export default function App() {
           {/* Countdown timer */}
           <div className="mb-16 md:mb-24 px-2 overflow-x-hidden w-full flex justify-center">
              <Countdown t={t} />
-          </div>
-
-          {/* Waitlist Card */}
-          <div className="w-full max-w-5xl">
-            <WaitlistCard t={t} lang={lang} />
           </div>
         </motion.div>
       </main>
