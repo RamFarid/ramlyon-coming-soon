@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 export function Countdown({ t }: { t: any }) {
   const [timeLeft, setTimeLeft] = useState(() => {
-  const targetDate = new Date("2026-07-02");
+  const targetDate = new Date("2026-08-02");
   const now = new Date();
   
   // Calculate the total difference in milliseconds
